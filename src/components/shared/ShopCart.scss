@@ -1,0 +1,31 @@
+.shop-cart {
+    display: flex;
+    flex-direction: row;
+    height: 122px;
+    width: 102%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    border: 1px solid gray;
+    font-family: ubuntu;
+    border-radius: 5px;
+  }
+  .shop-cart__image {
+    height: 100%;
+    width: 200px;
+  }
+.shop-cart__info{
+    width: 100px;
+}
+.shop-cart__title{
+    font-size :1em;
+}
+.shop-cart__price{
+
+}
+.shop-cart__quantity{
+
+}
+.shop-cart__buttons{
+    margin-right: 20px;
+}

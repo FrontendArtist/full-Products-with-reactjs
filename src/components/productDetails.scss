@@ -1,0 +1,48 @@
+.product{
+    width: 100%;
+    display: flex;
+    margin: 20px 10px;
+    font-family: ubuntu;
+    justify-content: center;
+
+}
+.product__img{
+width: fit-content;
+}
+.product__image{
+
+}
+.product__details{
+width: 400px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+.product__head{
+    display: flex;
+    justify-content: space-between;
+}
+.product__title{
+
+}
+.product__rate{
+
+}
+.product__mid{
+
+}
+.product__descriptio{
+
+}
+.product__intro{
+
+}
+.product__h{
+
+}
+.product__foot{
+    display: flex;
+    justify-content: end;
+}

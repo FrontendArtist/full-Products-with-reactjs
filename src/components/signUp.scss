@@ -1,0 +1,96 @@
+@mixin buttons($fontColor , $backGroundColor){
+   border: 1px solid #8f8f9d;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px 5px;
+   width: 80px;
+   height: 40px;
+   font-size: .95em;
+   font-weight: 500;
+   cursor: pointer;
+   text-decoration: none;
+   color: $fontColor;
+   background-color: $backGroundColor;
+}
+.signUp{
+   background-color: rgb(255, 255, 255);
+   width: 400px;
+   border-radius: 5px;
+   font-family: ubuntu;
+   display: flex;
+   justify-content: center;
+   padding: 50px 0px;
+   border:1px solid grey;
+   margin: 50px 0px;
+
+}
+
+.signUp-form{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 70%;
+
+   &__header{
+      color: rgb(0, 72, 155); 
+
+   
+   }
+ 
+   &__content{
+      display: flex;
+      flex-direction: column;
+      margin:10px 0px;
+      width: 100%;
+   }
+
+   &__label{
+      margin: 5px;
+      color: rgb(63, 63, 63);
+      
+   }
+   &__input{
+      height: 30px;
+      &--onError{
+         
+         border:1px solid #8f8f9d;
+         border-bottom: 1px solid red;
+      }
+      
+   }
+   &__error{
+      background-color: rgba(255, 0, 0, 0.24);
+      margin: 5px;
+      text-align: left;
+      font-size: 0.75em;
+      width: fit-content;
+      padding: 2px 5px;
+   }
+   
+   &__buttons{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px ;
+      
+   }
+   &__logIn{
+      @include buttons( $fontColor : rgb(0, 72, 155) , $backGroundColor : white);
+      transition: all .7s ;
+      &:hover{background-color: #d6d6d6;}
+   }
+   &__signUp{
+      @include buttons( $fontColor : white , $backGroundColor : rgb(0, 72, 155));
+      transition: all .7s ;
+      &:hover{color: #d6d6d6}
+   }
+
+}
+
+
+
+
