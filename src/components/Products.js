@@ -21,4 +21,4 @@ const prods = useContext(ProductsContext)
   )
 }
 
-export default Products
+export default Products;
